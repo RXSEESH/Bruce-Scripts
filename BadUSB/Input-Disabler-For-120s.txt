@@ -2,7 +2,7 @@
 # If BadUSB does not work for you - Transfer the device to DeepSleep
 # and then try to enable and run the script again.
 
-REM INPUT DISABLER FOR 120 SEC | BY RXSEESH
+REM FORKED INPUT DISABLER FOR 120 SEC | BY RXSEESH
 REM @guns.lol/RXSEESH | @github.com/RXSEESH
 GUI r
 DELAY 750
