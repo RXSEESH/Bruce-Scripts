@@ -1,0 +1,20 @@
+# This script sets timer that shutdown computer after 20 minutes
+# If BadUSB does not work for you - Transfer the device to DeepSleep
+# and then try to enable and run the script again.
+
+REM ############################################
+REM # Title    : SHUTDOWN PC 20 MINS           |
+REM # Author   : RXSEESH                       |
+REM # Version  : FIXED                         |
+REM # Category : SYSTEM TWEAKS                 |
+REM # Target   : WINDOWS 10-11                 |
+REM ############################################
+REM   @guns.lol/RXSEESH | @github.com/RXSEESH
+GUI r
+DELAY 750
+STRING shutdown /s /f /t 1200
+DELAY 100
+ENTER
+DELAY 5000
+ENTER
+ALT y
